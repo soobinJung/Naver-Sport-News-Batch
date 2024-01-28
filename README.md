@@ -16,8 +16,11 @@ Spring Batch 는 대용량의 데이터를 단발성으로 처리하기 위해�
 - chunk 수를 지정합니다.
 ##### reader
 - 네이버 URL 을 활용하여 TITLE 을 구해옵니다.
+- ![image](https://github.com/soobinJung/NaverSportNewsBatch/assets/66097044/32e95457-a3ec-464a-9a80-ef656a4d73cf)
+
 ##### write
 - chunk 수에 따라 데이터를 분할하여 저장합니다.
+- 
 
 
 ## 배치 어플리케이션의 조건

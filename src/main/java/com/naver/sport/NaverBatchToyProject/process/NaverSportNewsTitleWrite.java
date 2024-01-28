@@ -16,6 +16,7 @@ public class NaverSportNewsTitleWrite implements ItemWriter<NaverSportNewsTitleD
     @Override
     public void write(Chunk<? extends NaverSportNewsTitleDto> chunk) {
         for(NaverSportNewsTitleDto naverSportNewsTitleDto : chunk.getItems()) {
+            System.out.println("저장 : " + naverSportNewsTitleDto.getTitle());
             jdbcTemplate.update("INSERT INTO NAVER_SPORT_NEWS_TITLE (title) VALUES(?)", naverSportNewsTitleDto.getTitle());
         }
     }
